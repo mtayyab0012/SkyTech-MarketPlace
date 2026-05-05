@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SkyTech Marketplace Avatar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="stop-btn" onclick="stopSound()">STOP</div>
+
+<div class="grid">
+
+<!-- GREEN -->
+<button class="green" onclick="playSound('AV1-Hello')">Hello?</button>
+<button class="yellow" onclick="playSound('AV1-Thanksforasking')">Thanks for Ask</button>
+<button class="orange" onclick="playSound('')">Location</button>
+<button class="blue" onclick="playSound('AV1-Sorrytohearthat')">Sorry to Hear</button>
+
+<button class="green" onclick="playSound('AV1-Greeting')">Greeting-1</button>
+<button class="yellow" onclick="playSound('AV1-Canuhearme')">Can You Hear</button>
+<button class="orange" onclick="playSound('')">Calling From-MP</button>
+<button class="blue" onclick="playSound('')">Is That Ok</button>
+
+<button class="green" onclick="playSound('')">Greeting-2</button>
+<button class="yellow" onclick="playSound('')">Good to Know</button>
+<button class="orange" onclick="playSound('AV1-marketplace')">What-is-MP</button>
+<button class="blue" onclick="playSound('AV1-RUThere')">R u There</button>
+
+<button class="green" onclick="playSound('AV1-Pitch1')">Pitch-1</button>
+<button class="yellow" onclick="playSound('AV1-Busy')">Busy</button>
+<button class="orange" onclick="playSound('AV1-NotInterested')">Not Interested-1</button>
+<button class="blue" onclick="playSound('AV1-SorryGoAhead')">Sorry Go Ahead</button>
+
+<button class="green" onclick="playSound('AV1-Pitch2')">Pitch-2</button>
+<button class="yellow" onclick="playSound('AV1-RealPerson')">I'm Real</button>
+<button class="orange" onclick="playSound('AV1-NotInt2')">Not Interested-2</button>
+<button class="blue" onclick="playSound('')">Can You Repeat</button>
+
+<button class="green" onclick="playSound('AV1-Pitch3')">Pitch-3</button>
+<button class="yellow" onclick="playSound('')">AGE</button>
+<button class="orange" onclick="playSound('AV1-Medicare-Medicaid')">Medicare-Medicaid</button>
+<button class="blue" onclick="playSound('AV1-NoProblem')">No Problem</button>
+
+<button class="green" onclick="playSound('AV1-Trasnfer')">Transfer</button>
+<button class="red" onclick="playSound('Can_I_say_something_02')">Can I Say</button>
+<button class="orange" onclick="playSound('AV1-Free')">Free Subsidies Coming</button>
+<button class="blue" onclick="playSound('AV1-Yes')">Yes</button>
+
+<button class="green" onclick="playSound('AV1-Holdon')">Hold On</button>
+<button class="yellow" onclick="playSound('')">Let Me ASK</button>
+<button class="green" onclick="playSound('')">NULLL</button>
+<button class="blue" onclick="playSound('AV1-No')">No</button>
+
+<button class="green" onclick="playSound('AV1-Staywithme')">Stay With Me</button>
+<button class="red" onclick="playSound('')">Good Bye</button>
+<button class="blue" onclick="playSound('AV1-OK')">Ok</button>
+<button class="blue" onclick="playSound('')">Good</button>
+
+</div>
+
+<div class="stop-btn" onclick="stopSound()">STOP</div>
+
+</div> <!-- container -->
+<script src="script.js"></script>
+
+</body>
+<!-- Zoom Controls HTML - paste inside your <body>, at the top -->
+<div class="zoom-controls">
+    <button onclick="zoomOut()">−</button>
+    <button onclick="zoomReset()">⊙</button>
+    <button onclick="zoomIn()">+</button>
+</div>
+
+<script>
+    let scale = 1;
+    const container = document.querySelector('.container');
+
+    function zoomIn() {
+        scale = Math.min(scale + 0.1, 2.0);
+        container.style.transform = `scale(${scale})`;
+    }
+    function zoomOut() {
+        scale = Math.max(scale - 0.1, 0.5);
+        container.style.transform = `scale(${scale})`;
+    }
+    function zoomReset() {
+        scale = 1;
+        container.style.transform = `scale(1)`;
+    }
+</script>
+</html>
