@@ -11,7 +11,7 @@ const soundList = [
    "AV1-Pitch1",
    "AV1-Pitch2",
     "AV1-Pitch3",
-     "AV1-Trasnfer",
+     "AV1-Transfer",
       "AV1-Holdon",
      "AV1-Staywithme",
       "AV1-Thanksforasking",
