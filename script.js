@@ -8,6 +8,9 @@ const sounds = {};
 const soundList = [
   "AV1-Hello",
   "AV1-Greeting",
+  "AV1-Greeting2",
+  "AV1-Letmeask",
+  "AV1-Age",
    "AV1-Pitch1",
    "AV1-Pitch2",
     "AV1-Pitch3",
@@ -32,6 +35,9 @@ const soundList = [
           "AV1-Yes",
       "AV1-No",
         "AV1-is",
+  "AV1-Goodtoknow",
+  "AV1-Canyourepeat",
+  "AV1-Callingmp",
        
 
 
