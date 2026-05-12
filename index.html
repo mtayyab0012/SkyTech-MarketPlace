@@ -5,6 +5,47 @@
     <title>SkyTech Innovations ACA-Avatar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- ==================== PROTECTION SCRIPTS ==================== -->
+
+<script>
+      // 2. Disable Right Click
+      document.addEventListener('contextmenu', function(e){ e.preventDefault(); });
+
+      // 3. Disable Keyboard Shortcuts
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'F12') { e.preventDefault(); return false; }
+        if(e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i')) { e.preventDefault(); return false; }
+        if(e.ctrlKey && e.shiftKey && (e.key === 'J' || e.key === 'j')) { e.preventDefault(); return false; }
+        if(e.ctrlKey && e.shiftKey && (e.key === 'C' || e.key === 'c')) { e.preventDefault(); return false; }
+        if(e.ctrlKey && (e.key === 'u' || e.key === 'U')) { e.preventDefault(); return false; }
+        if(e.ctrlKey && (e.key === 's' || e.key === 'S')) { e.preventDefault(); return false; }
+        if(e.ctrlKey && (e.key === 'a' || e.key === 'A')) { e.preventDefault(); return false; }
+      });
+
+      // 4. Detect DevTools Open — clears page
+      var devtoolsOpen = false;
+      setInterval(function(){
+        var threshold = 160;
+        if(
+          window.outerWidth - window.innerWidth > threshold ||
+          window.outerHeight - window.innerHeight > threshold
+        ){
+          if(!devtoolsOpen){
+            devtoolsOpen = true;
+            document.body.innerHTML = "<div style='display:flex;align-items:center;justify-content:center;height:100vh;font-family:Arial;background:#1a1a1a;color:#fff;font-size:24px;'>⛔ DevTools Detected</div>";
+          }
+        } else {
+          devtoolsOpen = false;
+        }
+      }, 500);
+
+      // 5. Disable drag and drop of elements
+      document.addEventListener('dragstart', function(e){ e.preventDefault(); });
+
+      // 6. Disable printing
+      window.onbeforeprint = function(){ document.body.innerHTML = ""; };
+    </script>
+    <!-- ==================== END PROTECTION ==================== -->
     
 
 </head>
